@@ -1,0 +1,43 @@
+region:WorldLarge
+percentageDemand:1.0
+service:ABX
+numOfPorts:7
+ports:CNSHA,CNNGB,USLGB,JPYOK,JPNGO,CNTAO,CNSHA
+timeWindowStart:0.0,28.76,75.08,124.02,152.61,53.32,0.0
+timeWindowEnd:24.0,38.76,175.08,140.02,162.61,65.32,24.0
+fixedSailingCost:0 10067.4 712247.4 129395.7 116071.2 49892.85 0,10067.4 0 787456.8 132927.75 114506.1 50252.4 10067.4,712247.4 763176.6 0 602648.1 622930.95 713008.8 712247.4,129395.7 128655.45 602648.1 0 26627.85 139843.8 129395.7,116071.2 111460.5 622930.95 26627.85 0 124171.65 116071.2,49892.85 48602.7 713008.8 139843.8 124171.65 0 49892.85,0 10067.4 712247.4 129395.7 116071.2 49892.85 0
+sailingTime:0 4.76 336.76 61.18 54.88 23.59 0,4.76 0 372.32 62.85 54.14 23.76 4.76,336.76 360.84 0 284.94 294.53 337.12 336.76,61.18 60.83 284.94 0 12.59 66.12 61.18,54.88 52.7 294.53 12.59 0 58.71 54.88,23.59 22.98 337.12 66.12 58.71 0 23.59,0 4.76 336.76 61.18 54.88 23.59 0
+numOfDemands:8
+demands:d1,d2,d3,d4,d5,d6,d7,d8
+demandSource:1,6,5,4,3,3,3,3
+demandDestination:3,3,3,3,1,6,5,4
+demandAmount:8880,262,358,654,2822,120,302,1380
+demandRevenue:1596.37,1542.14,1930.03,1981.05,1121.83,1116.06,1250.40,1335.46
+demandTransitTime:360,576,360,336,480,576,432,336
+capacity:15000
+charterCost:385000.0
+random:0
+region_file:Sample_Data/lss_instances/src/Demand_WorldLarge.csv
+region_fleet_file:Sample_Data/lss_instances/src/fleet_WorldLarge.csv
+destination_path:Sample_Data/lss_instances/industrial
+prefix:lss
+general_fleet_file:Sample_Data/fleet_data.csv
+distance_matrix:Sample_Data/dist_dense.csv
+additional_distance_matrix:Sample_Data/distances.csv
+use_real_world:True
+use_additional_demand:False
+real_world_source:Sample_Data/lss_instances/industrial/src/nobutterfly/tight/psw5.csv
+additional_demand_file:Sample_Data/generated_demands.csv
+fix_fixedCostPerHour:400
+fix_timeWindowLength:20
+flag_subsetOfDemands:True
+vesselClass:Super_panamax
+designSpeed:17.0
+designConsumption:126.9
+demand_variation:h
+transittime_variation:('nbtight', 1.0)
+shuffled_time_windows:False
+fix_variation:[1.0]
+file:psw5.csv
+fix_numberOfInstancesPerScenario:1
+seed:psw5.csv

@@ -1,0 +1,43 @@
+region:WorldLarge
+percentageDemand:1.0
+service:ABX
+numOfPorts:10
+ports:CNSHA,CNNGB,CNSHK,SGSIN,MYPKG,GRPIR,TRIST,UAILK,ROCND,CNSHA
+timeWindowStart:0.0,30.9,92.58,33.69,61.02,65.93,98.92,158.45,41.86,0.0
+timeWindowEnd:26.0,48.9,110.58,47.69,73.02,79.93,138.92,200.45,81.86,26.0
+fixedSailingCost:0 6713.0 64622.9 183251.2 201513.3 648626.5 672848.1 698275.3 686452.2 0,6713.0 0 59841.6 179017.9 194745.5 656051.9 666984.5 693137.8 680917.4 6713.0,65842.2 60869.1 0 124820.7 142480.0 600114.8 612938.0 638378.9 626542.1 65842.2,183251.2 175771.0 122108.1 0 18262.1 465389.0 487829.6 513530.8 501022.7 183251.2,201513.3 190690.3 138041.2 18262.1 0 450606.7 472334.9 498036.1 485528.0 201513.3,648626.5 654065.4 597196.7 465389.0 450606.7 0 26016.3 52361.4 39620.4 648626.5,672012.4 667039.3 611225.5 486856.9 472047.2 27030.1 0 26756.1 15850.9 672012.4,693357.0 688575.7 634953.9 512708.8 496296.2 52320.3 27345.2 0 12891.7 693357.0,682999.8 678218.5 621637.5 499666.4 483253.8 39277.9 15426.2 13042.4 0 682999.8,0 6713.0 64622.9 183251.2 201513.3 648626.5 672848.1 698275.3 686452.2 0
+sailingTime:0 4.9 47.17 133.76 147.09 473.45 491.13 509.69 501.06 0,4.9 0 43.68 130.67 142.15 478.87 486.85 505.94 497.02 4.9,48.06 44.43 0 91.11 104.0 438.04 447.4 465.97 457.33 48.06,133.76 128.3 89.13 0 13.33 339.7 356.08 374.84 365.71 133.76,147.09 139.19 100.76 13.33 0 328.91 344.77 363.53 354.4 147.09,473.45 477.42 435.91 339.7 328.91 0 18.99 38.22 28.92 473.45,490.52 486.89 446.15 355.37 344.56 19.73 0 19.53 11.57 490.52,506.1 502.61 463.47 374.24 362.26 38.19 19.96 0 9.41 506.1,498.54 495.05 453.75 364.72 352.74 28.67 11.26 9.52 0 498.54,0 4.9 47.17 133.76 147.09 473.45 491.13 509.69 501.06 0
+numOfDemands:13
+demands:d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13
+demandSource:1,1,6,6,6,6,5,5,4,4,7,7,7
+demandDestination:6,7,1,5,4,7,6,7,6,7,1,6,4
+demandAmount:1620,304,134,16,64,6,126,68,232,34,74,6,98
+demandRevenue:2823.18,3715.62,775.33,1056.67,1017.37,2200,2759.54,2849.74,3056.46,2970.50,1592.93,1983.33333333,1650.0
+demandTransitTime:744,768,816,648,696,360,432,648,648,672,888,336,744
+capacity:8400.0
+charterCost:245000.0
+random:0
+region_file:Sample_Data/lss_instances/src/Demand_WorldLarge.csv
+region_fleet_file:Sample_Data/lss_instances/src/fleet_WorldLarge.csv
+destination_path:Sample_Data/lss_instances/industrial
+prefix:lss
+general_fleet_file:Sample_Data/fleet_data.csv
+distance_matrix:Sample_Data/dist_dense.csv
+additional_distance_matrix:Sample_Data/distances.csv
+use_real_world:True
+use_additional_demand:False
+real_world_source:Sample_Data/lss_instances/industrial/src/nobutterfly/tight/abx.csv
+additional_demand_file:Sample_Data/generated_demands.csv
+fix_fixedCostPerHour:400
+fix_timeWindowLength:20
+flag_subsetOfDemands:True
+vesselClass:Post_panamax
+designSpeed:16.5
+designConsumption:82.2
+demand_variation:h
+transittime_variation:('nbtight', 1.0)
+shuffled_time_windows:False
+fix_variation:[1.0]
+file:abx.csv
+fix_numberOfInstancesPerScenario:1
+seed:abx.csv

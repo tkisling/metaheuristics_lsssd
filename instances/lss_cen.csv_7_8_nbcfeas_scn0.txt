@@ -1,0 +1,43 @@
+region:WorldLarge
+percentageDemand:1.0
+service:ABX
+numOfPorts:8
+ports:CNDLC,KRTSN,CNTAO,CNSHA,CAPRR,USLGB,USOAK,CNDLC
+timeWindowStart:18.0,55.0,107.0,163.0,104.0,56.0,152.0,18.0
+timeWindowEnd:36.0,79.0,137.0,187.0,128.0,116.0,176.0,36.0
+fixedSailingCost:0 32422.95 44288.1 69668.1 690124.5 718719.3 679528.35 0,33797.7 0 37625.85 53847.9 663412.05 774153.45 761315.4 33797.7,44288.1 38937.15 0 49892.85 689722.65 713008.8 672823.8 44288.1,69668.1 53001.9 49892.85 0 685302.3 712247.4 672189.3 69668.1,606645.45 582894.0 603790.2 601231.05 0 185062.5 136650.15 606645.45,718719.3 759623.4 713008.8 712247.4 179859.6 0 46149.3 718719.3,679528.35 712078.2 672823.8 672189.3 135740.7 46149.3 0 679528.35,0 32422.95 44288.1 69668.1 690124.5 718719.3 679528.35 0
+sailingTime:0 15.33 20.94 32.94 326.3 339.82 321.29 0,15.98 0 17.79 25.46 313.67 366.03 359.96 15.98,20.94 18.41 0 23.59 326.11 337.12 318.12 20.94,32.94 25.06 23.59 0 324.02 336.76 317.82 32.94,286.83 275.6 285.48 284.27 0 87.5 64.61 286.83,339.82 359.16 337.12 336.76 85.04 0 21.82 339.82,321.29 336.68 318.12 317.82 64.18 21.82 0 321.29,0 15.33 20.94 32.94 326.3 339.82 321.29 0
+numOfDemands:8
+demands:d1,d2,d3,d4,d5,d6,d7,d8
+demandSource:1,4,4,3,6,6,6,7
+demandDestination:6,6,7,6,1,4,3,4
+demandAmount:592,3456,850,796,340,1092,584,710
+demandRevenue:1564.65,1646.46,1634.43,1456.96,1080.90,1068.18,1104.52,1197.91
+demandTransitTime:528,384,456,456,600,456,528,384
+capacity:15000
+charterCost:385000.0
+random:0
+region_file:Sample_Data/lss_instances/src/Demand_WorldLarge.csv
+region_fleet_file:Sample_Data/lss_instances/src/fleet_WorldLarge.csv
+destination_path:Sample_Data/lss_instances/industrial
+prefix:lss
+general_fleet_file:Sample_Data/fleet_data.csv
+distance_matrix:Sample_Data/dist_dense.csv
+additional_distance_matrix:Sample_Data/distances.csv
+use_real_world:True
+use_additional_demand:False
+real_world_source:Sample_Data/lss_instances/industrial/src/nobutterfly/cen.csv
+additional_demand_file:Sample_Data/generated_demands.csv
+fix_fixedCostPerHour:400
+fix_timeWindowLength:20
+flag_subsetOfDemands:True
+vesselClass:Super_panamax
+designSpeed:17.0
+designConsumption:126.9
+demand_variation:h
+transittime_variation:('nbcfeas', 1.0)
+shuffled_time_windows:False
+fix_variation:[1.0]
+file:cen.csv
+fix_numberOfInstancesPerScenario:1
+seed:cen.csv

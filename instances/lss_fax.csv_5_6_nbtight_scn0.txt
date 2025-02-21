@@ -1,0 +1,43 @@
+region:WorldLarge
+percentageDemand:1.0
+service:ABX
+numOfPorts:6
+ports:CNSHA,CNNGB,TWKEL,SGSIN,ZADUR,CNSHA
+timeWindowStart:0.0,22.76,59.71,17.3,159.65,0.0
+timeWindowEnd:18.0,41.76,73.71,41.3,255.65,18.0
+fixedSailingCost:0 10067.4 52367.4 274569.3 865542.6 0,10067.4 0 37964.25 268224.3 912453.3 10067.4,52367.4 38281.5 0 236012.85 827832.15 52367.4,274569.3 263359.8 236012.85 0 605630.25 274569.3,865542.6 887665.5 827832.15 605630.25 0 865542.6,0 10067.4 52367.4 274569.3 865542.6 0
+sailingTime:0 4.76 24.76 129.82 409.24 0,4.76 0 17.95 126.82 431.42 4.76,24.76 18.1 0 111.59 391.41 24.76,129.82 124.52 111.59 0 286.35 129.82,409.24 419.7 391.41 286.35 0 409.24,0 4.76 24.76 129.82 409.24 0
+numOfDemands:6
+demands:d1,d2,d3,d4,d5,d6
+demandSource:1,4,3,5,5,5
+demandDestination:5,5,5,1,4,3
+demandAmount:2806,38,60,1432,26,34
+demandRevenue:2644.95,1821.09,1976.36,1174.65,846.85,1027.21
+demandTransitTime:504,384,744,648,624,840
+capacity:15000.0
+charterCost:385000.0
+random:0
+region_file:Sample_Data/lss_instances/src/Demand_WorldLarge.csv
+region_fleet_file:Sample_Data/lss_instances/src/fleet_WorldLarge.csv
+destination_path:Sample_Data/lss_instances/industrial
+prefix:lss
+general_fleet_file:Sample_Data/fleet_data.csv
+distance_matrix:Sample_Data/dist_dense.csv
+additional_distance_matrix:Sample_Data/distances.csv
+use_real_world:True
+use_additional_demand:False
+real_world_source:Sample_Data/lss_instances/industrial/src/nobutterfly/tight/fax.csv
+additional_demand_file:Sample_Data/generated_demands.csv
+fix_fixedCostPerHour:400
+fix_timeWindowLength:20
+flag_subsetOfDemands:True
+vesselClass:Super_panamax
+designSpeed:17.0
+designConsumption:126.9
+demand_variation:h
+transittime_variation:('nbtight', 1.0)
+shuffled_time_windows:False
+fix_variation:[1.0]
+file:fax.csv
+fix_numberOfInstancesPerScenario:1
+seed:fax.csv

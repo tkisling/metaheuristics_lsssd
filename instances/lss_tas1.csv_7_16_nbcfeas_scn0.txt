@@ -1,0 +1,43 @@
+region:WorldLarge
+percentageDemand:1.0
+service:ABX
+numOfPorts:8
+ports:BEANR,DEBRV,NLRTM,FRLEH,USNYC,USORF,USCHS,BEANR
+timeWindowStart:7.0,46.0,97.0,132.0,7.0,55.0,103.0,7.0
+timeWindowEnd:20.0,70.0,116.0,168.0,29.0,73.0,115.0,20.0
+fixedSailingCost:0 41432.85 15058.8 30350.25 418918.05 445017.15 474880.95 0,41432.85 0 31851.9 56364.75 447385.95 473506.2 493915.95 41432.85,15058.8 31851.9 0 31111.65 423359.55 448697.25 475494.3 15058.8,30350.25 56364.75 31111.65 0 396202.95 422302.05 451742.85 30350.25,472808.25 498357.45 474056.1 451341.0 0 32486.4 75145.95 472808.25,516165.75 545289.3 517646.25 492456.6 31767.3 0 43167.15 516165.75,474880.95 493915.95 475494.3 451742.85 77091.75 46424.25 0 474880.95,0 41432.85 15058.8 30350.25 418918.05 445017.15 474880.95 0
+sailingTime:0 19.59 7.12 14.35 198.07 210.41 224.53 0,19.59 0 15.06 26.65 211.53 223.88 233.53 19.59,7.12 15.06 0 14.71 200.17 212.15 224.82 7.12,14.35 26.65 14.71 0 187.33 199.67 213.59 14.35,223.55 235.63 224.14 213.4 0 15.36 35.53 223.55,244.05 257.82 244.75 232.84 15.02 0 20.41 244.05,224.53 233.53 224.82 213.59 36.45 21.95 0 224.53,0 19.59 7.12 14.35 198.07 210.41 224.53 0
+numOfDemands:16
+demands:d1,d2,d3,d4,d5,d6,d7,d8,d9,d10,d11,d12,d13,d14,d15,d16
+demandSource:1,1,2,2,4,4,3,3,3,7,5,5,6,6,6,6
+demandDestination:5,6,5,6,5,6,7,5,6,3,2,3,1,2,4,3
+demandAmount:2,24,266,876,8,220,398,338,1304,550,30,40,28,566,54,1140
+demandRevenue:1960.00,1680.0,2147.21,1858.46,1854.71,1898.83,1717.62,2163.34,1798.12,1263.58,1783.77,1662.04,1670,1507.11,1578.39,1324.52
+demandTransitTime:408,120,432,192,288,216,960,432,768,408,360,504,360,312,264,288
+capacity:15000.0
+charterCost:385000.0
+random:0
+region_file:Sample_Data/lss_instances/src/Demand_WorldLarge.csv
+region_fleet_file:Sample_Data/lss_instances/src/fleet_WorldLarge.csv
+destination_path:Sample_Data/lss_instances/industrial
+prefix:lss
+general_fleet_file:Sample_Data/fleet_data.csv
+distance_matrix:Sample_Data/dist_dense.csv
+additional_distance_matrix:Sample_Data/distances.csv
+use_real_world:True
+use_additional_demand:False
+real_world_source:Sample_Data/lss_instances/industrial/src/nobutterfly/tas1.csv
+additional_demand_file:Sample_Data/generated_demands.csv
+fix_fixedCostPerHour:400
+fix_timeWindowLength:20
+flag_subsetOfDemands:True
+vesselClass:Super_panamax
+designSpeed:17.0
+designConsumption:126.9
+demand_variation:h
+transittime_variation:('nbcfeas', 1.0)
+shuffled_time_windows:False
+fix_variation:[1.0]
+file:tas1.csv
+fix_numberOfInstancesPerScenario:1
+seed:tas1.csv
